@@ -1,0 +1,484 @@
+{
+  "development_short_spoofing_candidates": 1350,
+  "development_short_spoofing_overlapping_multipath": 1300,
+  "note": "Development only. Outside labels is potential false alarm, not confirmed falsehood; sparse labels do not enumerate all recurrent multipath. May 6 excluded. Counts refer to individual candidates, not merged events.",
+  "background_flag_rates": [
+    {
+      "stratum": "moving",
+      "rows": 233983,
+      "low_cn0": 0.002334,
+      "weak_min_cn0": 0.037981,
+      "high_error": 0.031464,
+      "few_sats": 0.0,
+      "link_failure": 0.0,
+      "fix_degraded": 0.0,
+      "severe_cn0": 0.0,
+      "signal_spread": 0.045059,
+      "excess_error": 0.001162
+    },
+    {
+      "stratum": "parked",
+      "rows": 172800,
+      "low_cn0": 0.09375,
+      "weak_min_cn0": 0.09375,
+      "high_error": 0.0,
+      "few_sats": 0.0,
+      "link_failure": 0.0,
+      "fix_degraded": 0.087263,
+      "severe_cn0": 0.000127,
+      "signal_spread": 0.010098,
+      "excess_error": 0.0
+    }
+  ],
+  "candidate_status_counts": {
+    "outside_all_labels": 1923,
+    "other_cause_label_overlap": 763,
+    "matching_cause_overlap": 216
+  },
+  "by_trigger_and_cause": [
+    {
+      "status": "matching_cause_overlap",
+      "trigger": "excess_error",
+      "cause": "SPOOFING",
+      "candidates": 14,
+      "median_seconds": 39.0,
+      "parked_candidates": 0
+    },
+    {
+      "status": "matching_cause_overlap",
+      "trigger": "fix_degraded",
+      "cause": "EQUIPMENT_FAULT",
+      "candidates": 18,
+      "median_seconds": 64.5,
+      "parked_candidates": 0
+    },
+    {
+      "status": "matching_cause_overlap",
+      "trigger": "fix_degraded",
+      "cause": "JAMMING",
+      "candidates": 17,
+      "median_seconds": 241.0,
+      "parked_candidates": 0
+    },
+    {
+      "status": "matching_cause_overlap",
+      "trigger": "fix_degraded",
+      "cause": "SPACE_WEATHER",
+      "candidates": 6,
+      "median_seconds": 16236.5,
+      "parked_candidates": 0
+    },
+    {
+      "status": "matching_cause_overlap",
+      "trigger": "high_error",
+      "cause": "EQUIPMENT_FAULT",
+      "candidates": 17,
+      "median_seconds": 47.0,
+      "parked_candidates": 0
+    },
+    {
+      "status": "matching_cause_overlap",
+      "trigger": "high_error",
+      "cause": "JAMMING",
+      "candidates": 26,
+      "median_seconds": 22.5,
+      "parked_candidates": 0
+    },
+    {
+      "status": "matching_cause_overlap",
+      "trigger": "high_error",
+      "cause": "SPACE_WEATHER",
+      "candidates": 23,
+      "median_seconds": 974.0,
+      "parked_candidates": 0
+    },
+    {
+      "status": "matching_cause_overlap",
+      "trigger": "high_error",
+      "cause": "SPOOFING",
+      "candidates": 2,
+      "median_seconds": 2684.5,
+      "parked_candidates": 0
+    },
+    {
+      "status": "matching_cause_overlap",
+      "trigger": "link_failure",
+      "cause": "EQUIPMENT_FAULT",
+      "candidates": 11,
+      "median_seconds": 149.0,
+      "parked_candidates": 0
+    },
+    {
+      "status": "matching_cause_overlap",
+      "trigger": "low_cn0",
+      "cause": "JAMMING",
+      "candidates": 6,
+      "median_seconds": 2340.0,
+      "parked_candidates": 0
+    },
+    {
+      "status": "matching_cause_overlap",
+      "trigger": "low_cn0",
+      "cause": "SPACE_WEATHER",
+      "candidates": 6,
+      "median_seconds": 16650.0,
+      "parked_candidates": 0
+    },
+    {
+      "status": "matching_cause_overlap",
+      "trigger": "severe_cn0",
+      "cause": "JAMMING",
+      "candidates": 26,
+      "median_seconds": 131.5,
+      "parked_candidates": 0
+    },
+    {
+      "status": "matching_cause_overlap",
+      "trigger": "signal_spread",
+      "cause": "MULTIPATH",
+      "candidates": 2,
+      "median_seconds": 18.0,
+      "parked_candidates": 0
+    },
+    {
+      "status": "matching_cause_overlap",
+      "trigger": "weak_min_cn0",
+      "cause": "EQUIPMENT_FAULT",
+      "candidates": 3,
+      "median_seconds": 17.0,
+      "parked_candidates": 0
+    },
+    {
+      "status": "matching_cause_overlap",
+      "trigger": "weak_min_cn0",
+      "cause": "JAMMING",
+      "candidates": 24,
+      "median_seconds": 74.0,
+      "parked_candidates": 0
+    },
+    {
+      "status": "matching_cause_overlap",
+      "trigger": "weak_min_cn0",
+      "cause": "SPACE_WEATHER",
+      "candidates": 6,
+      "median_seconds": 16650.0,
+      "parked_candidates": 0
+    },
+    {
+      "status": "matching_cause_overlap",
+      "trigger": "weak_min_cn0",
+      "cause": "SPOOFING",
+      "candidates": 9,
+      "median_seconds": 16.0,
+      "parked_candidates": 0
+    },
+    {
+      "status": "other_cause_label_overlap",
+      "trigger": "excess_error",
+      "cause": "SPOOFING",
+      "candidates": 74,
+      "median_seconds": 27.5,
+      "parked_candidates": 0
+    },
+    {
+      "status": "other_cause_label_overlap",
+      "trigger": "few_sats",
+      "cause": "MULTIPATH",
+      "candidates": 23,
+      "median_seconds": 22.0,
+      "parked_candidates": 0
+    },
+    {
+      "status": "other_cause_label_overlap",
+      "trigger": "fix_degraded",
+      "cause": "MULTIPATH",
+      "candidates": 4,
+      "median_seconds": 39.5,
+      "parked_candidates": 0
+    },
+    {
+      "status": "other_cause_label_overlap",
+      "trigger": "high_error",
+      "cause": "MULTIPATH",
+      "candidates": 12,
+      "median_seconds": 19.0,
+      "parked_candidates": 0
+    },
+    {
+      "status": "other_cause_label_overlap",
+      "trigger": "high_error",
+      "cause": "SPOOFING",
+      "candidates": 20,
+      "median_seconds": 16.0,
+      "parked_candidates": 0
+    },
+    {
+      "status": "other_cause_label_overlap",
+      "trigger": "signal_spread",
+      "cause": "EQUIPMENT_FAULT",
+      "candidates": 6,
+      "median_seconds": 75.0,
+      "parked_candidates": 0
+    },
+    {
+      "status": "other_cause_label_overlap",
+      "trigger": "signal_spread",
+      "cause": "MULTIPATH",
+      "candidates": 580,
+      "median_seconds": 19.0,
+      "parked_candidates": 0
+    },
+    {
+      "status": "other_cause_label_overlap",
+      "trigger": "weak_min_cn0",
+      "cause": "JAMMING",
+      "candidates": 8,
+      "median_seconds": 16.5,
+      "parked_candidates": 0
+    },
+    {
+      "status": "other_cause_label_overlap",
+      "trigger": "weak_min_cn0",
+      "cause": "MULTIPATH",
+      "candidates": 18,
+      "median_seconds": 18.5,
+      "parked_candidates": 0
+    },
+    {
+      "status": "other_cause_label_overlap",
+      "trigger": "weak_min_cn0",
+      "cause": "SPOOFING",
+      "candidates": 18,
+      "median_seconds": 19.5,
+      "parked_candidates": 0
+    },
+    {
+      "status": "outside_all_labels",
+      "trigger": "fix_degraded",
+      "cause": "SPACE_WEATHER",
+      "candidates": 15,
+      "median_seconds": 172.0,
+      "parked_candidates": 15
+    },
+    {
+      "status": "outside_all_labels",
+      "trigger": "high_error",
+      "cause": "SPOOFING",
+      "candidates": 586,
+      "median_seconds": 16.0,
+      "parked_candidates": 0
+    },
+    {
+      "status": "outside_all_labels",
+      "trigger": "low_cn0",
+      "cause": "JAMMING",
+      "candidates": 12,
+      "median_seconds": 32.0,
+      "parked_candidates": 0
+    },
+    {
+      "status": "outside_all_labels",
+      "trigger": "low_cn0",
+      "cause": "SPACE_WEATHER",
+      "candidates": 3,
+      "median_seconds": 900.0,
+      "parked_candidates": 3
+    },
+    {
+      "status": "outside_all_labels",
+      "trigger": "signal_spread",
+      "cause": "MULTIPATH",
+      "candidates": 656,
+      "median_seconds": 17.0,
+      "parked_candidates": 2
+    },
+    {
+      "status": "outside_all_labels",
+      "trigger": "weak_min_cn0",
+      "cause": "SPACE_WEATHER",
+      "candidates": 3,
+      "median_seconds": 900.0,
+      "parked_candidates": 3
+    },
+    {
+      "status": "outside_all_labels",
+      "trigger": "weak_min_cn0",
+      "cause": "SPOOFING",
+      "candidates": 648,
+      "median_seconds": 17.0,
+      "parked_candidates": 0
+    }
+  ],
+  "examples_outside_labels": [
+    {
+      "event": 0,
+      "tractor": "T3",
+      "cause": "SPOOFING",
+      "trigger": "weak_min_cn0",
+      "status": "outside_all_labels",
+      "duration_s": 16.0,
+      "moving_fraction": 1.0,
+      "start": "2026-05-04 00:02:49+00:00",
+      "end": "2026-05-04 00:03:05+00:00",
+      "winning_score": 3.875
+    },
+    {
+      "event": 0,
+      "tractor": "T3",
+      "cause": "SPOOFING",
+      "trigger": "high_error",
+      "status": "outside_all_labels",
+      "duration_s": 15.0,
+      "moving_fraction": 1.0,
+      "start": "2026-05-04 00:02:49+00:00",
+      "end": "2026-05-04 00:03:04+00:00",
+      "winning_score": 5.0
+    },
+    {
+      "event": 0,
+      "tractor": "T1",
+      "cause": "SPOOFING",
+      "trigger": "weak_min_cn0",
+      "status": "outside_all_labels",
+      "duration_s": 15.0,
+      "moving_fraction": 1.0,
+      "start": "2026-05-04 00:02:50+00:00",
+      "end": "2026-05-04 00:03:05+00:00",
+      "winning_score": 3.4
+    },
+    {
+      "event": 0,
+      "tractor": "T2",
+      "cause": "SPOOFING",
+      "trigger": "weak_min_cn0",
+      "status": "outside_all_labels",
+      "duration_s": 14.0,
+      "moving_fraction": 1.0,
+      "start": "2026-05-04 00:02:51+00:00",
+      "end": "2026-05-04 00:03:05+00:00",
+      "winning_score": 3.714
+    },
+    {
+      "event": 0,
+      "tractor": "T1",
+      "cause": "SPOOFING",
+      "trigger": "high_error",
+      "status": "outside_all_labels",
+      "duration_s": 13.0,
+      "moving_fraction": 1.0,
+      "start": "2026-05-04 00:02:53+00:00",
+      "end": "2026-05-04 00:03:06+00:00",
+      "winning_score": 4.846
+    },
+    {
+      "event": 1,
+      "tractor": "T1",
+      "cause": "MULTIPATH",
+      "trigger": "signal_spread",
+      "status": "outside_all_labels",
+      "duration_s": 17.0,
+      "moving_fraction": 1.0,
+      "start": "2026-05-04 00:02:49+00:00",
+      "end": "2026-05-04 00:03:06+00:00",
+      "winning_score": 8.882
+    },
+    {
+      "event": 1,
+      "tractor": "T3",
+      "cause": "MULTIPATH",
+      "trigger": "signal_spread",
+      "status": "outside_all_labels",
+      "duration_s": 17.0,
+      "moving_fraction": 1.0,
+      "start": "2026-05-04 00:02:49+00:00",
+      "end": "2026-05-04 00:03:06+00:00",
+      "winning_score": 9.353
+    },
+    {
+      "event": 1,
+      "tractor": "T2",
+      "cause": "MULTIPATH",
+      "trigger": "signal_spread",
+      "status": "outside_all_labels",
+      "duration_s": 16.0,
+      "moving_fraction": 1.0,
+      "start": "2026-05-04 00:02:50+00:00",
+      "end": "2026-05-04 00:03:06+00:00",
+      "winning_score": 9.25
+    },
+    {
+      "event": 2,
+      "tractor": "T1",
+      "cause": "SPOOFING",
+      "trigger": "weak_min_cn0",
+      "status": "outside_all_labels",
+      "duration_s": 16.0,
+      "moving_fraction": 1.0,
+      "start": "2026-05-04 00:08:44+00:00",
+      "end": "2026-05-04 00:09:00+00:00",
+      "winning_score": 3.875
+    },
+    {
+      "event": 2,
+      "tractor": "T1",
+      "cause": "SPOOFING",
+      "trigger": "high_error",
+      "status": "outside_all_labels",
+      "duration_s": 17.0,
+      "moving_fraction": 1.0,
+      "start": "2026-05-04 00:08:44+00:00",
+      "end": "2026-05-04 00:09:01+00:00",
+      "winning_score": 4.941
+    },
+    {
+      "event": 2,
+      "tractor": "T2",
+      "cause": "SPOOFING",
+      "trigger": "weak_min_cn0",
+      "status": "outside_all_labels",
+      "duration_s": 17.0,
+      "moving_fraction": 1.0,
+      "start": "2026-05-04 00:08:44+00:00",
+      "end": "2026-05-04 00:09:01+00:00",
+      "winning_score": 4.294
+    },
+    {
+      "event": 2,
+      "tractor": "T3",
+      "cause": "SPOOFING",
+      "trigger": "weak_min_cn0",
+      "status": "outside_all_labels",
+      "duration_s": 17.0,
+      "moving_fraction": 1.0,
+      "start": "2026-05-04 00:08:44+00:00",
+      "end": "2026-05-04 00:09:01+00:00",
+      "winning_score": 3.412
+    }
+  ],
+  "learned_limits": {
+    "T1": {
+      "mean_cn0_dbhz": 41.400000000000006,
+      "min_cn0_dbhz": 34.0,
+      "cross_track_error_m": 0.067,
+      "num_sats": 4.0,
+      "severe_cn0": 27.00000000000003,
+      "signal_spread": 9.799999999999983
+    },
+    "T2": {
+      "mean_cn0_dbhz": 41.400000000000006,
+      "min_cn0_dbhz": 34.3,
+      "cross_track_error_m": 0.067,
+      "num_sats": 4.0,
+      "severe_cn0": 27.00000000000003,
+      "signal_spread": 9.500000000000014
+    },
+    "T3": {
+      "mean_cn0_dbhz": 41.400000000000006,
+      "min_cn0_dbhz": 33.9,
+      "cross_track_error_m": 0.07200000000000001,
+      "num_sats": 4.0,
+      "severe_cn0": 27.00000000000003,
+      "signal_spread": 9.900000000000013
+    }
+  }
+}

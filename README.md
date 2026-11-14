@@ -160,6 +160,29 @@ The automated diagnostic is supporting evidence for judges, not an extra
 rules, and recurrent-multipath exemption are published on page 4 of the PDF.
 Ties use mission relevance and decision quality, then technical execution.
 
+## Generate a submission with the current detector
+
+Run from the repository root (with the virtual environment activated):
+
+```bash
+python detect.py --data data --output results_grouped.json \
+  --github-handle BodenEngebretson \
+  --repo-url https://github.com/BodenEngebretson/Straight-Rows \
+  --submission-output submission.json
+python submission/validate_submission.py submission.json
+```
+
+Use your own GitHub handle and repository if different. The detector exports only
+May 6 evaluation detections, clips intervals to that window, includes evidence
+from overlapping members, and validates the submission before writing it.
+`results_grouped.json` contains diagnostics; `submission.json` is the file to
+submit. `--submission-output` can also target a nested submissions directory.
+If detections exceed the organizer's 500-entry limit, the export retains all
+non-multipath detections and samples recurring multipath evenly in time to fill
+remaining slots. This can omit a scored multipath representative; diagnostics
+retain every event. More than 500 non-multipath detections fails validation.
+Generating the file does not open the required GitHub pull request.
+
 ## Submitting by the deadline
 
 **Deadline: Saturday, November 14, 2026, 4:00 pm Central Time.** Pull requests
@@ -179,3 +202,21 @@ Registered participants receive the confirmed date, room, and kickoff time from
 **universityprograms@bluestaq.com**. One winner receives **both a paid summer internship at Bluestaq headquarters
 in Colorado Springs and a full one-year scholarship that pays tuition**. The internship is subject
 to standard internship eligibility and hiring requirements.
+
+## Local detector debugging UI
+
+Install the requirements, then run:
+
+```bash
+python -m streamlit run app.py --server.address 127.0.0.1
+```
+
+See [UI_GUIDE.md](UI_GUIDE.md) for installation, demo navigation, verification,
+and a numeric walkthrough from measurements to competing cause scores.
+
+See [false-alarm analysis](docs/FALSE_ALARM_ANALYSIS.md) for the development-data
+audit of recurrent multipath, duplicate spoofing assignments, and parked alerts.
+
+The [grouping update](docs/GROUPING_UPDATE.md) changes actual detector output,
+adds multi-event highlighting, and separates operational alerts from recurring
+multipath. Load `results_grouped.json` or click **Run Detector** for current results.
